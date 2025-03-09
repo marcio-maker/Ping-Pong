@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Pong</title>
+    <link rel="stylesheet" href="pong.css">
+</head>
+<body>
+    <div class="menu">
+        <h1>Pong Game</h1>
+        <button id="start-button">Iniciar Jogo</button>
+    </div>
+    <div class="game-container">
+        <div class="score-container">
+            <div id="player-score">0</div>
+            <div id="ai-score">0</div>
+        </div>
+        <img src="player-paddle.png" class="paddle" id="player-paddle" alt="Raquete do Jogador">
+        <img src="ai-paddle.png" class="paddle" id="ai-paddle" alt="Raquete da IA">
+        <img src="ball.png" class="ball" id="ball" alt="Bola">
+    </div>
+    <script src="pong.js"></script>
+</body>
+</html>

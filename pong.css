@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    text-align: center;
+    color: #fff;
+}
+
+.menu h1 {
+    font-size: 3rem;
+}
+
+.menu button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #8b2626;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.game-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background-color: #333;
+    overflow: hidden;
+    display: none; /* Esconder o jogo inicialmente */
+}
+
+.score-container {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    font-size: 24px;
+}
+
+.paddle {
+    position: absolute;
+    width: 20px; /* Ajuste conforme a imagem */
+    height: 100px; /* Ajuste conforme a imagem */
+}
+
+#player-paddle {
+    left: 10px;
+    top: 150px;
+}
+
+#ai-paddle {
+    right: 10px;
+    top: 150px;
+}
+
+.ball {
+    position: absolute;
+    width: 20px; /* Ajuste conforme a imagem */
+    height: 20px; /* Ajuste conforme a imagem */
+}
+
+@media (max-width: 800px) {
+    .game-container {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .paddle {
+        height: 80px;
+    }
+
+    .ball {
+        width: 15px;
+        height: 15px;
+    }
+}
